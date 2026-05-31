@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,12 +8,12 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: #fffaf0;
       color: #2b2b2b;
     }
 
-    /* HEADER BAR */
+    /* HEADER */
     header {
       display: flex;
       align-items: center;
@@ -32,16 +32,12 @@
       padding: 3px;
     }
 
-    header .title {
-      text-align: left;
-    }
-
-    header h1 {
+    header .title h1 {
       margin: 0;
       font-size: 26px;
     }
 
-    header p {
+    header .title p {
       margin: 0;
       font-size: 14px;
     }
@@ -60,18 +56,28 @@
       font-weight: bold;
     }
 
-    /* HERO */
+    /* HERO (FIXED + LONGER + NO CROP) */
     .hero {
-      background: url('westwood-honey-banner.jpg') center/cover no-repeat;
-      height: 420px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      padding: 20px;
       position: relative;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 40px 20px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('westwood-honey-banner.jpg') center center / contain no-repeat;
+      background-color: #000; /* fills empty space around image */
     }
 
     .hero::after {
@@ -81,21 +87,23 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0,0,0,0.35);
+      background: rgba(0,0,0,0.45);
     }
 
-    .hero h2, .hero p {
+    .hero-content {
       position: relative;
       z-index: 1;
+      max-width: 800px;
     }
 
     .hero h2 {
-      font-size: 48px;
-      margin: 0;
+      font-size: 52px;
+      margin: 0 0 15px 0;
     }
 
     .hero p {
       font-size: 18px;
+      line-height: 1.6;
     }
 
     /* SECTIONS */
@@ -157,13 +165,13 @@
 </nav>
 
 <section class="hero" id="home">
-  <h2>Pure Raw Honey from Vancouver Island</h2>
-  <p>Cowichan Valley • Sustainable Beekeeping • Local Quality</p>
-</section>
-
-<section class="section" id="about">
-  <h2>About Us</h2>
-  <p>Westwood Bees is a small family-run beekeeping operation located in the Cowichan Valley on Vancouver Island. We focus on producing high-quality raw honey, bees, and queens using natural and sustainable methods.</p>
+  <div class="hero-content">
+    <h2>Pure Raw Honey from Vancouver Island</h2>
+    <p>
+      Westwood Bees is a small family-run beekeeping operation located in the Cowichan Valley on Vancouver Island. 
+      We focus on producing high-quality raw honey, nucs, and queens using natural and sustainable methods.
+    </p>
+  </div>
 </section>
 
 <section class="section" id="products">
