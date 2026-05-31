@@ -18,6 +18,13 @@
       color: white;
       padding: 20px;
       text-align: center;
+      position: relative;
+    }
+
+    header img.logo {
+      height: 70px;
+      display: block;
+      margin: 0 auto 10px auto;
     }
 
     nav {
@@ -34,14 +41,19 @@
     }
 
     .hero {
-      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
+      background: url('westwood-honey-banner.jpg') center/cover;
       color: white;
-      padding: 100px 20px;
+      padding: 120px 20px;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 48px;
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
     }
 
     .section {
@@ -52,16 +64,22 @@
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
     .card {
       background: white;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
 
     footer {
@@ -69,6 +87,7 @@
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -76,8 +95,9 @@
 <body>
 
 <header>
+  <img src="Westwood_bees-logo.jpg" alt="Westwood Bees Logo" class="logo">
   <h1>Westwood Bees</h1>
-  <p>Local Honey • Natural Products • Sustainable Beekeeping</p>
+  <p>Local Raw Honey, Nucs, Queens</p>
 </header>
 
 <nav>
@@ -89,39 +109,41 @@
 
 <section class="hero">
   <h1>Pure Local Honey</h1>
-  <p>From our hives to your home</p>
+  <p>From the Cowichan Valley, Vancouver Island</p>
 </section>
 
 <section id="about" class="section">
   <h2>About Us</h2>
-  <p>Westwood Bees is a small local beekeeping business focused on natural, raw honey and sustainable practices in British Columbia.</p>
+  <p>Westwood Bees is a local beekeeping operation based in the Cowichan Valley on Vancouver Island. We focus on producing high-quality raw honey, nucs, and queens using natural and sustainable practices.</p>
 </section>
 
 <section id="products" class="section">
   <h2>Our Products</h2>
-
   <div class="products">
+
+    <div class="card">
+      <img src="Honey-pricelist-2026.jpg" alt="Honey Price List">
+      <h3>Honey Price List 2026</h3>
+      <p>View our current honey varieties and pricing.</p>
+    </div>
+
     <div class="card">
       <h3>Raw Honey</h3>
-      <p>Unfiltered, pure honey straight from the hive.</p>
+      <p>Pure, unfiltered honey straight from our hives.</p>
     </div>
 
     <div class="card">
-      <h3>Beeswax Candles</h3>
-      <p>Natural candles with a warm honey scent.</p>
+      <h3>Nucs & Queens</h3>
+      <p>Healthy bee colonies and quality queens available seasonally.</p>
     </div>
 
-    <div class="card">
-      <h3>Honeycomb</h3>
-      <p>Fresh, natural honeycomb — a premium treat.</p>
-    </div>
   </div>
 </section>
 
 <section id="contact" class="section">
-  <h2>Contact</h2>
+  <h2>Contact Us</h2>
   <p>Email: info@westwoodbees.com</p>
-  <p>Location: British Columbia, Canada</p>
+  <p>Location: Cowichan Valley, Vancouver Island, Canada</p>
 </section>
 
 <footer>
