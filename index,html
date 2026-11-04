@@ -1,1 +1,213 @@
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Westwood Bees</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf0;
+      color: #2b2b2b;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px 20px;
+      background: #f4b400;
+      color: white;
+    }
+
+    header img {
+      height: 55px;
+      width: auto;
+      border-radius: 8px;
+      background: white;
+      padding: 3px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #2d2d2d;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* WEBSITE BANNER */
+    .banner {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* INTRODUCTION */
+    .hero {
+      text-align: center;
+      padding: 30px 20px;
+      background: #fff3d6;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      color: #c98b00;
+      margin: 0 0 12px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    /* SECTIONS */
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #c98b00;
+    }
+
+    /* PRODUCT CARDS */
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+    }
+
+    .card img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 15px auto 0;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #fff3d6;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="Westwood_bees-logo.jpg" alt="Westwood Bees Logo">
+  <div>
+    <h1>Westwood Bees</h1>
+    <p>Local Raw Honey, Nucs & Queens</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- WEBSITE BANNER -->
+<img class="banner"
+     src="westwood-bees-banner.png"
+     alt="Westwood Bees Banner">
+
+<!-- INTRODUCTION -->
+<section class="hero" id="home">
+  <h2>Pure Raw Honey from Vancouver Island</h2>
+  <p>
+    Westwood Bees is a small family-run beekeeping operation
+    located in the Cowichan Valley on Vancouver Island.
+    We focus on producing high-quality raw honey, nucs,
+    and queens using natural and sustainable methods.
+  </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+
+  <h2>Our Products</h2>
+
+  <div class="card">
+    <h3>Raw Honey</h3>
+    <p>Pure, unfiltered honey straight from our hives.</p>
+    <img src="Honey-pricelist-2026.jpg"
+         alt="Honey Price List 2026">
+  </div>
+
+  <div class="card">
+    <h3>Nucs & Queens</h3>
+    <p>
+      Healthy colonies and quality queens available seasonally.
+      Contact us for availability and information.
+    </p>
+    <img src="queen (2).jpg"
+         alt="Westwood Bees Queen and Nuc">
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact">
+    <p>Email: info@westwoodbees.com</p>
+    <p>Location: Cowichan Valley, Vancouver Island, Canada</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Westwood Bees</p>
+</footer>
+
+</body>
+</html>
+```
